@@ -2,6 +2,7 @@
     <!-- Step1:修改为自己的刚体名称，注意建立刚体时机头朝向！！ -->
 
     <arg name="rigid_name" default="uav1" />
+    <arg name="Your_Topic_Name" default="/vision_odom" />
 
     <!-- Step2:启动vrpn_client_ros -->
 
@@ -34,6 +35,7 @@
         output="screen" >
         <remap from="/vrpn_client_node/uav1/pose" to="/vrpn_client_node/$(arg rigid_name)/pose"/>
         <remap from="/vrpn_client_node/uav1/twist" to="/vrpn_client_node/$(arg rigid_name)/twist"/>
+        <remap from="/vision_odom" to="$(arg Your_Topic_Name)"/>
     </node> 
     
     <!--（可选） Step6: 增加IMU和Odom的发布频率-->
