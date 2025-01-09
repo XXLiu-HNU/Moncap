@@ -17,9 +17,9 @@
         <!-- 这里可以选择通过WIFI远程连接地面站 -->
         <!-- （推荐）Option 1： 使用广播模式，局域网内的地面站都可以自动连接到-->
 	<!--<arg name="gcs_url" value="udp-b://@"/>-->
-	<arg name="gcs_url" value="udp://：14501@192.168.1.100:14551/>
+	<arg name="gcs_url" value="udp://：@192.168.1.100:14551/>
         <!-- Option 2： 指定IP和端口号，假设地面站IP为192.168.1.100， UDP端口选择14550：-->
-        <!-- <arg name="gcs_url" value="udp://192.168.1.100:14550" /> -->
+        <!-- <arg name="gcs_url" value="udp://@192.168.1.100:14550" /> -->
 	    <arg name="tgt_system" value="3" />
     </include>
 
