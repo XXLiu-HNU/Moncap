@@ -42,20 +42,4 @@
         <remap from="/vision_odom" to="$(arg Your_Topic_Name)"/>
     </node> 
     
-    <!--（可选） Step6: 增加IMU和Odom的发布频率-->
-    <node 
-        name="mavcmd_imu" 
-        pkg="mavros" 
-        type="mavcmd" 
-        args="long 511 105 5000 0 0 0 0 0 " 
-        output="screen"
-    />
-
-    <node 
-        name="mavcmd_odom" 
-        pkg="mavros" 
-        type="mavcmd" 
-        args="long 511 31 5000 0 0 0 0 0 " 
-        output="screen"
-    />
 </launch>
